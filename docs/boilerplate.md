@@ -2,12 +2,12 @@
 
 ### `inject:readme:commands`
 
-To inject `npm run x` commands in the main `./README.md`.
+To inject `npm run x` commands in the main `docs/npm-commands.md`.
 
 ### `inject:top-nav:entry`
 
 To inject `<nuxt-link />` to pages in the top navigation bar at
-`./src/components/the-top-nav.vue`.
+`src/components/the-top-nav.vue`.
 
 ## Boilerplate development
 

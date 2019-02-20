@@ -11,7 +11,7 @@ these plugins:
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
 - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
 
-Custom rules can be found in the file `./eslintrc.js`.
+Custom rules can be found in the file `eslintrc.js`.
 
 ### `npm run lint:script:fix`
 
