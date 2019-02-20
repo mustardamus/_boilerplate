@@ -25,18 +25,17 @@ npx hygen
 
 ### ESLint
 
-#### `npx hygen eslint node`
+- `npx hygen eslint node`: Add linting for Node.js projects
+- `npx hygen eslint vue`: Add linting for Vue.js projects
+- `npx hygen eslint jest`: Add linting for Jest testing
+- `npx hygen eslint all`: Add all of the above together
 
-#### `npx hygen eslint vue`
+### Stylelint
 
-#### `npx hygen eslint jest`
-
-#### `npx hygen eslint all`
+- `npx hygen stylelint init`: Add linting for stylesheets
 
 ### Nuxt
 
-#### `npx hygen nuxt init`
-
-#### `npx hygen nuxt page`
-
-#### `npx hygen nuxt component`
+- `npx hygen nuxt init`: Initialize a good starting point for a Nuxt.js app
+- `npx hygen nuxt page`: Add a page to an existing Nuxt.js app
+- `npx hygen nuxt component`: Add a component to an existing Nuxt.js app

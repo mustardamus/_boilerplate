@@ -17,10 +17,6 @@ Custom rules can be found in the file `eslintrc.js`.
 
 Will fix all auto-fixable problems found with the linter.
 
-### `npm run lint`
-
-Will run all linters together.
-
 ### `npm run upgrade`
 
 Will provide an interactive way to update outdated dependencies via

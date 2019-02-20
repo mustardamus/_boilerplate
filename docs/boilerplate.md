@@ -15,6 +15,16 @@ To inject `<nuxt-link />` to pages in the top navigation bar at
 
 ## Boilerplate development
 
-### `npm run reset-boilerplate`
+Do a basic setup for a new project:
 
-Reverts boilerplate to original state.
+```
+degit mustardamus/_boilerplate new-boilerplate-feature
+cd new-boilerplate-feature
+npm install
+git init .
+git add .
+git commit -m "initial commit"
+```
+
+Then implement the new feature. Once you are happy with it, create the templates
+for the new feature. Check the changed files with git.

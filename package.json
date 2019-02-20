@@ -13,9 +13,7 @@
   "scripts": {
     "lint:script": "eslint --ext .js,.vue .",
     "lint:script:fix": "eslint --fix --ext .js,.vue .",
-    "lint": "npm run lint:script",
-    "upgrade": "npm-check --update --skip-unused --no-emoji --save-exact",
-    "reset-boilerplate": "cp .eslintrc.js.org .eslintrc.js && cp package.json.org package.json && cp README.md.org README.md && rm nuxt.config.js && rm docs/nuxt-app.md && rm -rf src"
+    "upgrade": "npm-check --update --skip-unused --no-emoji --save-exact"
   },
   "dependencies": {},
   "devDependencies": {
