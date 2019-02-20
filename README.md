@@ -7,6 +7,7 @@ Extendable boilerplate for JavaScript projects based on
 
 - [NPM Commands](./docs/npm-commands.md): All available commands for the project
 - [Boilerplate](./docs/boilerplate.md): Boilerplate development
+<!-- inject:readme:docs-link -->
 
 ## Setup
 
@@ -34,8 +35,8 @@ npx hygen
 
 ### Nuxt
 
-### `npx hygen nuxt init`
+#### `npx hygen nuxt init`
 
-### `npx hygen nuxt page`
+#### `npx hygen nuxt page`
 
-### `npx hygen nuxt component`
+#### `npx hygen nuxt component`

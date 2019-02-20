@@ -2,7 +2,11 @@
 
 ### `inject:readme:commands`
 
-To inject `npm run x` commands in the main `docs/npm-commands.md`.
+To inject `npm run x` commands in the `docs/npm-commands.md` documentation.
+
+### `inject:readme:docs-link`
+
+To inject links to the dedicated documentation in the main `README.md`.
 
 ### `inject:top-nav:entry`
 
