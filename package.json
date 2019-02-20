@@ -1,0 +1,32 @@
+{
+  "name": "_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=11.9.0",
+    "npm": ">=6.7.0"
+  },
+  "scripts": {
+    "lint:script": "eslint --ext .js,.vue .",
+    "lint:script:fix": "eslint --fix --ext .js,.vue .",
+    "lint": "npm run lint:script",
+    "upgrade": "npm-check --update --skip-unused --no-emoji --save-exact",
+    "reset-boilerplate": "cp .eslintrc.js.org .eslintrc.js && cp package.json.org package.json && cp README.md.org README.md && rm nuxt.config.js && rm -rf docs && rm -rf src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "eslint": "5.13.0",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "hygen": "2.1.2",
+    "npm-check": "5.9.0",
+    "prettier": "1.16.4"
+  }
+}
