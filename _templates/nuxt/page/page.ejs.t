@@ -47,5 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.<%= className %> {}
+.<%= className %> {
+  width: auto;
+}
 </style>

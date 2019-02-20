@@ -28,5 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.<%= name %> {}
+.<%= name %> {
+  width: auto;
+}
 </style>
