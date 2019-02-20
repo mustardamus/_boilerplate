@@ -1,5 +1,5 @@
 ---
-to: README.md
+to: docs/npm-commands.md
 inject: true
 after: "inject:readme:commands"
 skip_if: "npm run dev"

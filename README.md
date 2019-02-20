@@ -1,58 +1,41 @@
 # _boilerplate
 
-Extendable boilerplate for JavaScript projects. Run `npx hygen` to see all the
-generators. Corresponding files are located at `./_templates`.
+Extendable boilerplate for JavaScript projects based on
+[hygen](http://www.hygen.io/quick-start) templates.
 
-Further documentation can be found in `./docs`.
+## Documentation
 
-## Commands
+- [NPM Commands](./docs/npm-commands.md): All available commands for the project
+- [Boilerplate](./docs/boilerplate.md): Boilerplate development
 
-### `npm run lint:script`
+## Setup
 
-Runs [ESLint](https://eslint.org) recursively on all `*.js` and `*.vue` files
-in the current directory. It uses [Prettier](https://prettier.io) to format
-code. On top of recommended ESLint rules, it uses the recommended rules of
-these plugins:
+The fastest way is to use the [degit](https://github.com/Rich-Harris/degit)
+tool, `npm install degit -g` if you haven't already installed it.
 
-- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
-- [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
-- [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
+```
+degit mustardamus/_boilerplate my-funky-project
+cd my-funky-project
+npm install
+npx hygen
+```
 
-Custom rules can be found in the file `./eslintrc.js`.
+## Templates
 
-### `npm run lint:script:fix`
+### ESLint
 
-Will fix all auto-fixable problems found with the linter.
+#### `npx hygen eslint node`
 
-### `npm run lint`
+#### `npx hygen eslint vue`
 
-Will run all linters together.
+#### `npx hygen eslint jest`
 
-### `npm run upgrade`
+#### `npx hygen eslint all`
 
-Will provide an interactive way to update outdated dependencies via
-[npm-check](https://github.com/dylang/npm-check). Exact versions are stored in
-`package.json`.
+### Nuxt
 
-<!-- inject:readme:commands -->
+### `npx hygen nuxt init`
 
-## Boilerplate injection points
+### `npx hygen nuxt page`
 
-### `inject:readme:commands`
-
-To inject `npm run x` commands in the main `./README.md`.
-
-### `inject:top-nav:entry`
-
-To inject `<nuxt-link />` to pages in the top navigation bar at
-`./src/components/the-top-nav.vue`.
-
-## Boilerplate development
-
-### `npm run reset-boilerplate`
-
-Reverts boilerplate to original state.
-
-## Notes
-
-- disable whitespace package in atom to respect editorconfig
+### `npx hygen nuxt component`
