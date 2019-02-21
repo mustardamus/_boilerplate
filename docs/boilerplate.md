@@ -13,6 +13,10 @@ To inject links to the dedicated documentation in the main `README.md`.
 To inject `<nuxt-link />` to pages in the top navigation bar at
 `src/components/the-top-nav.vue`.
 
+### `inject:readme:testing`
+
+To inject extra documentation for testing in `docs/testing.md`.
+
 ## Boilerplate development
 
 Do a basic setup for a new project:

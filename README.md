@@ -39,3 +39,7 @@ npx hygen
 - `npx hygen nuxt init`: Initialize a good starting point for a Nuxt.js app
 - `npx hygen nuxt page`: Add a page to an existing Nuxt.js app
 - `npx hygen nuxt component`: Add a component to an existing Nuxt.js app
+
+### Jest
+
+- `npx hygen jest init`: Initialize the Jest testing framework
