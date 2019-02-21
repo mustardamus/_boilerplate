@@ -43,3 +43,4 @@ npx hygen
 ### Jest
 
 - `npx hygen jest init`: Initialize the Jest testing framework
+- `npx hygen jest vue`: Extends Jest to be able to test Vue components
