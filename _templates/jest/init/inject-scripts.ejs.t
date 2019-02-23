@@ -2,7 +2,7 @@
 to: package.json
 inject: true
 after: scripts
-skip_if: "jest"
+skip_if: "jest --watch"
 ---
     "test": "jest",
     "test:watch": "jest --watch",

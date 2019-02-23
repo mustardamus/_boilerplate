@@ -26,4 +26,4 @@ describe('<%= describe %>', () => {
     expect(<%= camelCased %>()).toBe(true)
 <% } -%>
   })
-})<% '\n' %>
+})<%= '\n' %>

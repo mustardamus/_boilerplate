@@ -46,3 +46,8 @@ npx hygen
 - `npx hygen jest vue`: Extends Jest to be able to test Vue components
 - `npx hygen jest test`: Creates a test file for either JS or Vue based on the
   source file extension
+
+### Project
+
+- `npx hygen project nuxt`: Runs `eslint all` + `stylelint init` + `jest init` +
+  `jest vue` + `nuxt init`
