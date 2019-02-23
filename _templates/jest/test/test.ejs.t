@@ -1,5 +1,5 @@
 ---
-to: tests/<%= filePath.replace('.vue', '.js') %>
+to: tests/<%= filePath.replace('.js', '.test.js').replace('.vue', '.test.js') %>
 ---
 <%
   isVue = filePath.includes('.vue')
