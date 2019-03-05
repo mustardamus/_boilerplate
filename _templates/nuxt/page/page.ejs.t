@@ -50,4 +50,4 @@ export default {
 .<%= className %> {
   width: auto;
 }
-</style>
+</style><%= '\n' %>

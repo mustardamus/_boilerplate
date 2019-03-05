@@ -13,6 +13,8 @@ export default {
 
   components: {},
 
+  props: {},
+
   data() {
     return {}
   },
@@ -31,4 +33,4 @@ export default {
 .<%= name %> {
   width: auto;
 }
-</style>
+</style><%= '\n' %>
