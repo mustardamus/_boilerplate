@@ -47,7 +47,13 @@ npx hygen
 - `npx hygen jest test`: Creates a test file for either JS or Vue based on the
   source file extension
 
+### Strapi
+
+- `npx hygen strapi init`: Initialize a new Strapi app
+
 ### Project
 
 - `npx hygen project nuxt`: Runs `eslint all` + `stylelint init` + `jest init` +
   `jest vue` + `nuxt init`
+- `npx hygen project strapi`: Runs `eslint node` + `eslint jest` + `jest init` +
+  `strapi init`
