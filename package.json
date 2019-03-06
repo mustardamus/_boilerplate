@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=11.9.0",
-    "npm": ">=6.7.0"
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
   },
   "scripts": {
     "lint:script": "eslint --ext .js,.vue .",
