@@ -1,15 +1,18 @@
 ---
 to: src/components/<% if(locals.subfolder) { %><%= subfolder + '/' %><% } %><%= name %>.vue
 ---
+<%
+  className = locals.subfolder ? `${locals.subfolder}-${name}` : name
+-%>
 <template>
-  <div class="<%= name %>">
-    <%= name %>
+  <div class="<%= className %>">
+    <%= className %>
   </div>
 </template>
 
 <script>
 export default {
-  name: '<%= name %>',
+  name: '<%= className %>',
 
   components: {},
 
@@ -30,7 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.<%= name %> {
+.<%= className %> {
   width: auto;
 }
 </style><%= '\n' %>
