@@ -39,6 +39,8 @@ npx hygen
 - `npx hygen nuxt init`: Initialize a good starting point for a Nuxt.js app
 - `npx hygen nuxt page`: Add a page to an existing Nuxt.js app
 - `npx hygen nuxt component`: Add a component to an existing Nuxt.js app
+- `npx hygen nuxt form-component`: Add a form component to an existing Nuxt.js
+  app
 
 ### Jest
 
