@@ -53,3 +53,7 @@ npx hygen
 
 - `npx hygen project nuxt`: Runs `eslint all` + `stylelint init` + `jest init` +
   `jest vue` + `nuxt init`
+
+### Shipit
+
+- `npx hygen shipit init`: Creates a shipitfile for server setup and deployment

@@ -1,0 +1,17 @@
+[Unit]
+Description=Node.js App
+#Requires=After=mysql.service
+
+[Service]
+ExecStart=/usr/bin/npm start
+WorkingDirectory=/home/app/app/current
+Restart=always
+RestartSec=20
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nodejs-app
+User=app
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
