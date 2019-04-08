@@ -9,7 +9,7 @@ const { prompt } = require('enquirer') // eslint-disable-line
 
 const username = 'app'
 const deployTo = '~/app'
-const repositoryUrl = '<%= repositoryUrl =>'
+const repositoryUrl = '<%= repositoryUrl %>'
 const serverIp = process.env.SERVER_IP
 
 module.exports = shipit => {
