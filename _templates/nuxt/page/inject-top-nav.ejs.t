@@ -5,5 +5,5 @@ after: "inject:top-nav:entry"
 skip_if: <%= 'to="/' + name %>
 ---
         <nuxt-link to="/<% if(locals.subfolder) { %><%= subfolder + '/' %><% } %><%= name %>" class="navbar-item">
-          <%= name %>
+          <%= h.capitalize(name) %>
         </nuxt-link><%= '\n' %>
