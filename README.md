@@ -42,6 +42,8 @@ npx hygen
 - `npx hygen nuxt form-component`: Add a form component to an existing Nuxt.js app
   app
 - `npx hygen nuxt store`: Add a store to the Nuxt.js app
+- `npx hygen nuxt resource`: Creates components, pages and store for a resource
+  to create/edit/show/delete a resource
 
 ### Jest
 
