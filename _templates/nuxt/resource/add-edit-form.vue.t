@@ -42,7 +42,7 @@ to: src/components/<%= namePlural %>/add-edit-form.vue
 import Vue from 'vue'
 
 export default {
-  name: '<%= namePlural %>',
+  name: '<%= className %>',
 
   components: {},
 
