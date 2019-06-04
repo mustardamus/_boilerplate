@@ -1,7 +1,7 @@
 module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
-    ecmaVersion: 2017,
+    ecmaVersion: 2019,
     sourceType: 'module'
   },
 
@@ -61,7 +61,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.vue']
+        extensions: ['.js', '.vue', '.svelte']
       }
     }
   }

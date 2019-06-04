@@ -24,7 +24,7 @@ to: src/components/<%= namePlural %>/item.vue
       </div>
 
       <footer class="card-footer">
-        <nuxt-link :to="'/comments/' + item.id" class="card-footer-item">
+        <nuxt-link :to="'/<%= namePlural %>/' + item.id" class="card-footer-item">
           Show
         </nuxt-link>
 
