@@ -29,6 +29,7 @@ npx hygen
 - `npx hygen eslint vue`: Add linting for Vue.js projects
 - `npx hygen eslint jest`: Add linting for Jest testing
 - `npx hygen eslint all`: Add all of the above together
+- `npx hygen eslint svelte`: Add linting for Svelte projects
 
 ### Stylelint
 
@@ -39,11 +40,15 @@ npx hygen
 - `npx hygen nuxt init`: Initialize a good starting point for a Nuxt.js app
 - `npx hygen nuxt page`: Add a page to an existing Nuxt.js app
 - `npx hygen nuxt component`: Add a component to an existing Nuxt.js app
-- `npx hygen nuxt form-component`: Add a form component to an existing Nuxt.js app
+- `npx hygen nuxt form-component`: Add a form component to an existing Nuxt.js
   app
 - `npx hygen nuxt store`: Add a store to the Nuxt.js app
 - `npx hygen nuxt resource`: Creates components, pages and store for a resource
   to create/edit/show/delete a resource
+
+### Sapper
+
+- `npx hygen sapper init`: Initialize a good starting point for a Sapper app
 
 ### Jest
 
@@ -56,6 +61,8 @@ npx hygen
 
 - `npx hygen project nuxt`: Runs `eslint all` + `stylelint init` + `jest init` +
   `jest vue` + `nuxt init`
+- `npx hygen project sapper`: Runs `eslint node` + `eslint svelte` +
+  `sapper init`
 
 ### Shipit
 
