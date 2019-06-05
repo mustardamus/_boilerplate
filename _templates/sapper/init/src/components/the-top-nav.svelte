@@ -26,10 +26,6 @@
         Home
       </a>
 
-      <a href="/about" class="navbar-item">
-        About
-      </a>
-
       <!-- inject:top-nav:entry -->
     </div>
 
