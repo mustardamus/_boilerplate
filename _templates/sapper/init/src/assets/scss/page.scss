@@ -1,0 +1,60 @@
+@include mobile {
+  .page {
+    flex-direction: column;
+
+    &.hide-sidebar-left nav[slot="sidebar-left"] {
+      display: none;
+    }
+
+    &.hide-sidebar-right nav[slot="sidebar-right"] {
+      display: none;
+    }
+  }
+}
+
+@include tablet {
+  .page {
+    flex-direction: column;
+
+    &.hide-sidebar-left nav[slot="sidebar-left"] {
+      display: none;
+    }
+
+    &.hide-sidebar-right nav[slot="sidebar-right"] {
+      display: none;
+    }
+  }
+}
+
+@include desktop {
+  .page {
+    flex: 1;
+    flex-direction: row;
+
+    main {
+      flex: 1;
+    }
+
+    nav {
+      flex: 0 0 $sidebar-width;
+
+      &[slot="sidebar-left"],
+      &[slot="sidebar-right"] {
+        display: block !important;
+      }
+    }
+  }
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+
+  main {
+    margin: 1.5rem;
+  }
+
+  nav {
+    background: $sidebar-background;
+  }
+}

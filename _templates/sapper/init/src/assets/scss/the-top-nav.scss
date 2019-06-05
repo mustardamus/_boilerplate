@@ -1,0 +1,26 @@
+@include mobile {
+  #the-top-nav .navbar-brand .navbar-item {
+    text-align: left;
+    width: auto;
+  }
+}
+
+@include tablet {
+  #the-top-nav .navbar-brand .navbar-item {
+    text-align: left;
+    width: auto;
+  }
+}
+
+@include desktop {
+  #the-top-nav .navbar-brand .navbar-item {
+    text-align: center;
+    width: $sidebar-width;
+    display: block;
+    padding-top: 14px;
+  }
+}
+
+#the-top-nav {
+  background: $topbar-background;
+}

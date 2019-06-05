@@ -49,6 +49,7 @@ npx hygen
 ### Sapper
 
 - `npx hygen sapper init`: Initialize a good starting point for a Sapper app
+- `npx hygen sapper component`: Add a component to an existing Sapper app
 
 ### Jest
 

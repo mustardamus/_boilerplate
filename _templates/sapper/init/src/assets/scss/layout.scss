@@ -1,0 +1,46 @@
+// https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/
+
+@include mobile {
+  #app > header {
+    position: fixed;
+  }
+
+  #app > main {
+    margin-top: $header-top-margin-mobile;
+  }
+}
+
+@include tablet {
+  #app > header {
+    position: fixed;
+  }
+
+  #app > main {
+    margin-top: $header-top-margin-mobile;
+  }
+}
+
+@include desktop {
+  #app > header {
+    position: relative;
+  }
+
+  #app > main {
+    margin-top: 0;
+  }
+}
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+
+  > header {
+    width: 100%;
+  }
+
+  > footer {
+    background: $footer-background;
+  }
+}

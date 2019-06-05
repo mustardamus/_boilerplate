@@ -1,15 +1,23 @@
 <script>
-	console.log('lets get started')
+	import Page from '../components/page.svelte'
 </script>
 
 <svelte:head>
 	<title>Lets get started :)</title>
 </svelte:head>
 
-<section class="section">
+<Page hideSidebarLeftOnMobile={true} hideSidebarRightOnMobile={true}>
+	<nav slot="sidebar-left">
+		Left Sidebar
+	</nav>
+
+	<nav slot="sidebar-right">
+		Right Sidebar
+	</nav>
+
 	<h1 class="title is-1">
-		Lets get started :)
+		Let's get started :)
 	</h1>
-</section>
+</Page>
 
 <style></style>
