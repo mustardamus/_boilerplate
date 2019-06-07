@@ -39,7 +39,6 @@ export default {
 
       scss({
         ...scssOptions,
-        indentedSyntax: true,
         outputStyle: dev ? 'nested' : 'compressed',
         output(css) {
           saveCssBundle(css)
