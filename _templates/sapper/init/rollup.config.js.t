@@ -2,23 +2,29 @@
 to: rollup.config.js
 unless_exists: true
 ---
+import { writeFileSync } from 'fs'
 import resolve from 'rollup-plugin-node-resolve'
 import replace from 'rollup-plugin-replace'
 import commonjs from 'rollup-plugin-commonjs'
 import svelte from 'rollup-plugin-svelte'
 import babel from 'rollup-plugin-babel'
 import { terser } from 'rollup-plugin-terser'
+import scss from 'rollup-plugin-scss'
 import autoPreprocess from 'svelte-preprocess'
 import config from 'sapper/config/rollup.js'
+import Purgecss from 'purgecss'
+import purgeSvelte from 'purgecss-from-svelte'
 import pkg from './package.json'
 
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
 const legacy = !!process.env.SAPPER_LEGACY_BUILD
-const preprocessOptions = {
-  scss: {
-    includePaths: ['src/assets/scss', 'node_modules']
-  }
+const scssOptions = { includePaths: ['src/assets/scss', 'node_modules'] }
+const cssBundlePath = 'static/global.css'
+const saveCssBundle = css => writeFileSync(cssBundlePath, css, 'utf8')
+const preprocess = autoPreprocess({ scss: scssOptions })
+const env = {
+  'process.env.NODE_ENV': JSON.stringify(mode)
 }
 
 export default {
@@ -26,20 +32,34 @@ export default {
     input: config.client.input(),
     output: config.client.output(),
     plugins: [
-      replace({
-        'process.browser': true,
-        'process.env.NODE_ENV': JSON.stringify(mode)
-      }),
-
-      svelte({
-        dev,
-        hydratable: true,
-        emitCss: true,
-        preprocess: autoPreprocess(preprocessOptions)
-      }),
-
+      replace({ ...env, 'process.browser': true }),
+      svelte({ dev, hydratable: true, preprocess }),
       resolve(),
       commonjs(),
+
+      scss({
+        ...scssOptions,
+        indentedSyntax: true,
+        outputStyle: dev ? 'nested' : 'compressed',
+        output(css) {
+          saveCssBundle(css)
+
+          if (!dev) {
+            const purgecss = new Purgecss({
+              content: ['src/**/*.html', 'src/**/*.svelte'],
+              css: [cssBundlePath],
+              extractors: [
+                {
+                  extractor: purgeSvelte,
+                  extensions: ['html', 'svelte']
+                }
+              ]
+            })
+
+            saveCssBundle(purgecss.purge()[0].css)
+          }
+        }
+      }),
 
       legacy &&
         babel({
@@ -73,17 +93,8 @@ export default {
     input: config.server.input(),
     output: config.server.output(),
     plugins: [
-      replace({
-        'process.browser': false,
-        'process.env.NODE_ENV': JSON.stringify(mode)
-      }),
-
-      svelte({
-        dev,
-        generate: 'ssr',
-        preprocess: autoPreprocess(preprocessOptions)
-      }),
-
+      replace({ ...env, 'process.browser': false }),
+      svelte({ dev, generate: 'ssr', preprocess }),
       resolve(),
       commonjs()
     ],
@@ -97,11 +108,8 @@ export default {
     input: config.serviceworker.input(),
     output: config.serviceworker.output(),
     plugins: [
+      replace({ ...env, 'process.browser': true }),
       resolve(),
-      replace({
-        'process.browser': true,
-        'process.env.NODE_ENV': JSON.stringify(mode)
-      }),
       commonjs(),
       !dev && terser()
     ]
