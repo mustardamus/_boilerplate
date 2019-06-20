@@ -64,7 +64,7 @@ npx hygen
 - `npx hygen project nuxt`: Runs `eslint all` + `stylelint init` + `jest init` +
   `jest vue` + `nuxt init`
 - `npx hygen project sapper`: Runs `eslint node` + `eslint svelte` +
-  `sapper init`
+  `sapper init` + `storybook init ` + `storybook svelte`
 
 ### Shipit
 
