@@ -1,3 +1,3 @@
 ---
-sh: npm install @storybook/svelte --save-dev --save-exact
+sh: npm install @storybook/svelte svelte-loader --save-dev --save-exact
 ---
