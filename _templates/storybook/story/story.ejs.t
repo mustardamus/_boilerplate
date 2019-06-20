@@ -13,7 +13,7 @@ stories.addDecorator(withKnobs)
 stories.add(
   'of something',
   () => ({
-    Component: MyButton,
+    Component: Button,
     props: {
       buttonText: text('buttonText', 'This is a button')
     },
