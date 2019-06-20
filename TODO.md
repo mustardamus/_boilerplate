@@ -1,0 +1,2 @@
+- jest for svelte
+- insert gitignore for nuxt
