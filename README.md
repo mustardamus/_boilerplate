@@ -60,3 +60,8 @@ npx hygen
 ### Shipit
 
 - `npx hygen shipit init`: Creates a shipitfile for server setup and deployment
+
+### Storybook
+
+- `npx hygen storybook init`: Initialize ths Storybook framework
+- `npx hygen storybook svelte`: Create Storybook config file to use Svelte
