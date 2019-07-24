@@ -1,2 +1,3 @@
 - jest for svelte
 - insert gitignore for nuxt
+- clean up storybook init/svelte

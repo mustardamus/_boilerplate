@@ -62,7 +62,7 @@ npx hygen
 ### Project
 
 - `npx hygen project nuxt`: Runs `eslint all` + `stylelint init` + `jest init` +
-  `jest vue` + `nuxt init`
+  `jest vue` + `nuxt init` + `storybook nuxt`
 - `npx hygen project sapper`: Runs `eslint node` + `eslint svelte` +
   `sapper init` + `storybook init ` + `storybook svelte`
 
@@ -72,5 +72,7 @@ npx hygen
 
 ### Storybook
 
-- `npx hygen storybook init`: Initialize ths Storybook framework
+- `npx hygen storybook init`: Initialize the Storybook framework
 - `npx hygen storybook svelte`: Create Storybook config file to use Svelte
+- `npx hygen storybook nuxt`: Initialite the Storybook framework configured for
+  Nuxt.js
