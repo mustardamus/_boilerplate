@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
 @include mobile {
   .page {
     flex-direction: column;

@@ -24,6 +24,9 @@ export default {
 <style lang="scss" scoped>
 // https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/
 
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
 @include tablet {
   header {
     position: fixed;

@@ -8,15 +8,7 @@ import globby from 'globby'
 export default {
   srcDir: 'src',
 
-  modules: [
-    '@nuxtjs/style-resources' // eslint-ignore-line
-  ],
-
   css: ['assets/scss/main.scss'],
-
-  styleResources: {
-    scss: ['assets/scss/variables.scss', 'assets/scss/mixins.scss']
-  },
 
   router: {
     linkActiveClass: 'is-active'
